@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Connect Four-gi</title>
+		<meta name="description" content="Not your average Connect Four game.">
+		<meta name="author" content="Alexandra Grant">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Stylesheets -->
+	  <link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<div id="header">
+				<img src="img/corgi-xs.png"/>
+				<h1>  Connect Four-gi </h1>
+				<div id="top-nav">
+					<ul>
+						<li> <span id="p2" class="blue-font"> Player 2 </span> : <span id="p2-score"></span> </li>
+						<li> <span id="p1" class="red-font"> Player 1 </span> : <span id="p1-score"></span> </li>
+						<li class="black-tab"><strong> Score </strong></li>
+						<li class="black-tab"> </li>
+						<li id="ranking" class="red-tab"><a href="#">Rankings</a></li>
+						<li class="black-tab"> </li>
+						<li id="restart" class="red-tab"><a href="#">Restart</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="bubble"><img src="img/bubble.png"/></div>
+			<div id="about"><img height="70px" src="img/corgi-about.png"/></div>
+
+			<div id="instruction"><span>Click to drop</span><img src="img/arrow.png"></div>
+
+			<div id="game">
+				<div id="new-chip" class="red"></div>
+				<ul id="board"></ul>
+			</div>
+
+			<div class="box" id="end-game">
+				<div class="box-header">Game Over</div>
+				<div class="box-content">
+					<span id="end-game-msg"></span>
+					<button id="new-game"><a href="#">New Game</a></button>
+				</div>
+			</div>
+
+			<div class="box" id="ranking-box">
+			<div class="box-header">Current Standings</div>
+			<div class="box-content">
+				<table id="top-table">
+					<tbody>
+					<tr>
+						<td> Rank </td>
+						<td> Name </td>
+						<td> Games Won </td>
+					</tr>
+					</tbody>
+				</table>
+				<button class="close"><a href="#">Close</a></button>
+				</div>
+			</div>
+
+			<div class="box" id="about-box">
+				<div class="box-header">About</div>
+				<div class="box-content">
+					<p>This game follows the traditional rules of connect four. The first player to get four in a row
+					horizontally, vertically, or diagonally wins the game. <p>
+					<p>To drop a chip, simply click anywhere on the column of your choice. You cannot drop chips into full columns.</p>
+					<p>This page will keep track of the number of games each player has won. To restart mid-game, hit 'restart'.<p>
+					<p>To change player names, double click on the name of the player to enter a new name. </p>
+					<p> Enjoy! <br> -Alexandra</p>
+					<button class="close"><a href="#">Close</a></button>
+				</div>
+			</div>
+
+			<div class="box" id="name-box">
+				<div class="box-header">Player <span id="player-num"></span> Name</div>
+				<div class="box-content">
+					Type a new name:
+					<input id="name-input" type="text"/>
+					<button id="save-name"><a href="#">OK</a></button>
+					<button class="close"><a href="#">Close</a></button>
+				</div>
+			</div>
+
+			<div id="footer">
+				Created by Alexandra Grant 01/17/15<br>
+				Corgi images from <a class="link" href="http://4.bp.blogspot.com/-GprmARj6TC0/T6xNEPbBe8I/AAAAAAAAR3Y/WQ5FCZkLbb4/s1600/blueb2.jpg"> here </a> and <a class="link" href="http://thewithouse.com/wp-content/uploads/2013/11/corgi-3.jpg"> here </a>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="libs/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/connectfour.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+		<script type="text/javascript" src='js/main.js'></script>
+	</body>
+</html>

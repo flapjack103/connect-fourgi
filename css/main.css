@@ -1,0 +1,306 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0;
+	height: 100%;
+}
+
+
+/* Button links */
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: black;
+}
+
+/* For regular links */
+.link {
+	color: blue !important;
+}
+
+/* Content wrapper */
+#wrapper {
+	min-height:100%;
+	min-width:950px;
+	position:relative;
+}
+
+/* Website header and logo */
+#header {
+	background-color: black;
+	color: white;
+	width: 100%;
+	height: 45px;
+	margin-top:0;
+	padding-top:10px;
+}
+
+#header img {
+	float: left;
+	margin-left: 10px;
+	height: 35px;
+}
+
+#header h1 {
+	position: relative;
+	margin-top:0;
+	margin-left:15px;
+	margin-bottom:0;
+  	left: 10px;
+}
+
+/* Left nav bar and buttons */
+#top-nav {
+	position: absolute;
+	top: 9px;
+	right: 40px;
+}
+
+#top-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#top-nav li {
+	list-style-type: none;
+	float: right;
+	height: 28px;
+	background: #fcfcfc;
+	color: black;
+	display: inline;
+	padding: 6px 20px 1px 20px;
+}
+
+.red-tab {
+	-webkit-border-radius: 7;
+  	-moz-border-radius: 7;
+  	border-radius: 7px;
+	background: #d93434 !important;
+	color: white !important;
+}
+
+.black-tab {
+	background: black !important;
+	color: white !important;
+}
+
+/* Game board styling */
+#board {
+	width:600px;
+	padding: 0;
+}
+
+#board li {
+	width:80px;
+	height:80px;
+	float: left;
+	list-style-type: none;
+}
+
+#game {
+	height: 100%;
+	margin-top: 110px;
+	margin-left: 160px;
+	margin-bottom: 20px;
+}
+
+.circle {
+	border-radius: 50%;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+.empty {
+	background-color: black;
+}
+
+.red {
+	background-color: red;
+	background-image: url("../img/corgi-xs.png");
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.blue {
+	background-color: blue;
+	background-image: url("../img/corgi-xs.png");
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.red-font {
+	color: red;
+}
+
+.blue-font {
+	color: blue;
+}
+
+/* Floating chip */
+#new-chip {
+	top:77px;
+	width:80px;
+	height:80px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+/* Instruction note */
+#instruction {
+	position: absolute;
+	color: black;
+	font-size: 17px;
+	top: 175px;
+	left: 5px;
+}
+
+#instruction img {
+	vertical-align: middle;
+}
+
+/* Hovering message box */
+.box {
+	-webkit-border-radius: 12;
+  	-moz-border-radius: 12;
+  	border-radius: 12px;
+	color: #000000;
+	position: absolute;
+	top: 55px;
+	left: 365px;
+	border-style: solid;
+    border-width: 2px;
+    border-color: #eeeeee;
+    background-color: #fdfdfd;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.box-header {
+	background-color: #eeeeee;
+	height: 27px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-top: 15px;
+	font-size: 18px;
+}
+
+.box-content {
+	-webkit-border-radius: 12;
+  	-moz-border-radius: 12;
+  	border-radius: 12px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#ranking-box {
+	display: none;
+}
+
+#end-game {
+	display: none;
+}
+
+#about-box {
+	display: none;
+}
+
+#name-box {
+	display: none;
+}
+
+#end-game-msg {
+	margin: 10px auto;
+	display: block;
+	width: 100px;
+}
+
+/* All buttons get the same styling */
+button {
+	-webkit-border-radius: 7;
+  	-moz-border-radius: 7;
+  	border-radius: 7px;
+  	color: #ffffff;
+  	font-size: 15px;
+  	background: #d93434;
+  	padding: 5px 10px 5px 10px;
+  	text-decoration: none;
+  	border: none;
+  	margin: 10px auto;
+	display: block;
+	/* height: 100%; */
+	width: 100px;
+}
+
+button:hover {
+	border:none;
+}
+
+
+/* Footer styling */
+#footer {
+	height:35px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+/* Ranking table styling */
+#top-table {
+	border-collapse: collapse;
+}
+
+#top-table td {
+	height: 25px;
+}
+
+#top-table tr:not(:first-child):hover {
+	background: #d93434;
+	color: white;
+}
+
+#top-table tr td  { 
+	width: 150px; 
+}
+
+#top-table tr td:first-child {
+	width: 50px; 
+}
+
+#top-table tr td:last-child {
+	width: 100px; 
+}
+
+#top-table tr:first-child td {
+    font-weight: bold;
+    border-bottom: solid 1px black;
+}
+
+/* Speech Bubble styling */
+#bubble {
+	position: absolute;
+	top: 60px;
+	left: 800px;
+	display:none;
+}
+
+#about {
+	position: absolute;
+	top: 102px;
+	left: 842px;
+}
+
+#about:hover {
+	display:block;
+	-webkit-transform: rotate(10deg);
+ 	-moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+
+
+
+
+
+
+
+
